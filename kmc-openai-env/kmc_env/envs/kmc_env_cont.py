@@ -98,6 +98,7 @@ class KmcEnv(gym.Env):
             reward=reward*self.reward_multiplier
             reward[reward<-1]=-1
             #add the stuff from the notebook
+        
         return state, reward, end_flag
     
     def reset(self,verbose=False):
